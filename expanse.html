@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script>
+	$(document).ready(function() {
+    $('.example2').hide().before('<a href="#" id="toggle-example2" class="button">Question</a>');
+    $('a#toggle-example2').click(function() {
+        $('.example2').slideToggle(1000);
+        return false;
+    });
+});
+</script>
+	</head>
+	<body>
+		<div class="example2">
+    <p>Answer to Question</p>
+</div>
+	</body>
+</html>
