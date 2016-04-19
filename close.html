@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			function toggleMe(a){
+			var e=document.getElementById(a);
+			var i = document.getElementById(a + '_image');
+			if(!e)return true;
+			if(e.style.display=="none"){
+			e.style.display="block"
+			i.src = 'YOUR OPEN IMAGE URL';
+			} else {
+			e.style.display="none"
+			i.src = 'YOUR CLOSED IMAGE URL';
+			}
+			return false;
+			}
+		</script>
+	</head>
+	<body>
+		<p><a style="cursor:pointer;" onclick="return toggleMe('para1')"><img id="para1_image" src="YOUR CLOSED IMAGE URL" style="border:0;margin-right:5px;vertical-align:middle;" />Question</a></p>
+		<div id="para1" style="display:none;">
+		Answer to Question
+		</div>
+	</body>
+</html>
